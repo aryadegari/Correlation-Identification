@@ -1,0 +1,48 @@
+DecisionTreeClassifier(max_depth=4, min_samples_leaf=2, ccp_alpha=0.003)
+---------------------------------------------------------------------
+dataset: bpic17_logs_with_interventions
+------------------------------------------------------
+Classifier: Decision Tree
+10-fold cross-validation mean F1: 0.7654498728572802
+|--- CreditScore <= 39.50
+|   |--- hour <= 13.50
+|   |   |--- weekday <= 4.50
+|   |   |   |--- class: 1
+|   |   |--- weekday >  4.50
+|   |   |   |--- class: 0
+|   |--- hour >  13.50
+|   |   |--- class: 0
+|--- CreditScore >  39.50
+|   |--- CreditScore <= 40.50
+|   |   |--- weekday <= 4.50
+|   |   |   |--- hour <= 13.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- hour >  13.50
+|   |   |   |   |--- class: 0
+|   |   |--- weekday >  4.50
+|   |   |   |--- class: 0
+|   |--- CreditScore >  40.50
+|   |   |--- class: 1
+
+---------------------------------------------------------------------
+dataset: synthetic_logs_with_adaptations
+------------------------------------------------------
+Classifier: Decision Tree
+10-fold cross-validation mean F1: 0.9237324182574183
+|--- trace:cycle_time <= 250.09
+|   |--- trace:cycle_time <= 214.36
+|   |   |--- trace:cycle_time <= 206.70
+|   |   |   |--- class: no-action
+|   |   |--- trace:cycle_time >  206.70
+|   |   |   |--- class: no-action
+|   |--- trace:cycle_time >  214.36
+|   |   |--- trace:cycle_time <= 224.70
+|   |   |   |--- trace:cycle_time <= 224.44
+|   |   |   |   |--- class: no-action
+|   |   |   |--- trace:cycle_time >  224.44
+|   |   |   |   |--- class: insert
+|   |   |--- trace:cycle_time >  224.70
+|   |   |   |--- class: no-action
+|--- trace:cycle_time >  250.09
+|   |--- class: skip
+
