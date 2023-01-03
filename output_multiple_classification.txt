@@ -1,0 +1,60 @@
+dataset: bpic17_logs_with_interventions
+-----------------------------------------------------------
+Classifier: Nearest Neighbors
+10-fold cross-validation mean F1: 0.6156468709837416
+-----------------------------------------------------------
+Classifier: Linear SVM
+10-fold cross-validation mean F1: 0.5879738165563744
+-----------------------------------------------------------
+Classifier: RBF SVM
+10-fold cross-validation mean F1: 0.3761762134602237
+-----------------------------------------------------------
+Classifier: Decision Tree
+10-fold cross-validation mean F1: 0.7667181488461632
+-----------------------------------------------------------
+Classifier: Random Forest
+10-fold cross-validation mean F1: 0.6622528807500939
+-----------------------------------------------------------
+Classifier: Neural Net
+10-fold cross-validation mean F1: 0.7220517263425028
+-----------------------------------------------------------
+Classifier: AdaBoost
+10-fold cross-validation mean F1: 0.7095708771460894
+-----------------------------------------------------------
+Classifier: Naive Bayes
+10-fold cross-validation mean F1: 0.6837216447462959
+-----------------------------------------------------------
+Classifier: QDA
+10-fold cross-validation mean F1: 0.6818927208348341
+
+
+
+
+dataset: synthetic_logs_with_adaptations
+-----------------------------------------------------------
+Classifier: Nearest Neighbors
+10-fold cross-validation mean F1: 0.6688850179977335
+-----------------------------------------------------------
+Classifier: Linear SVM
+10-fold cross-validation mean F1: 0.7480531423445591
+-----------------------------------------------------------
+Classifier: RBF SVM
+10-fold cross-validation mean F1: 0.7421891678083166
+-----------------------------------------------------------
+Classifier: Decision Tree
+10-fold cross-validation mean F1: 0.923349141635657
+-----------------------------------------------------------
+Classifier: Random Forest
+10-fold cross-validation mean F1: 0.9142260422186894
+-----------------------------------------------------------
+Classifier: Neural Net
+10-fold cross-validation mean F1: 0.7480531423445591
+-----------------------------------------------------------
+Classifier: AdaBoost
+10-fold cross-validation mean F1: 0.8264897957330447
+-----------------------------------------------------------
+Classifier: Naive Bayes
+10-fold cross-validation mean F1: 0.757329007898474
+-----------------------------------------------------------
+Classifier: QDA
+10-fold cross-validation mean F1: 0.756002486565303
