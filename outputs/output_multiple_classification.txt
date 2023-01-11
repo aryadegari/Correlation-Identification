@@ -1,60 +1,60 @@
-dataset: bpic17_logs_with_interventions
------------------------------------------------------------
+Dataset: bpic17_logs_with_interventions
+
 Classifier: Nearest Neighbors
-10-fold cross-validation mean F1: 0.6156468709837416
------------------------------------------------------------
-Classifier: Linear SVM
-10-fold cross-validation mean F1: 0.5879738165563744
------------------------------------------------------------
-Classifier: RBF SVM
-10-fold cross-validation mean F1: 0.3761762134602237
------------------------------------------------------------
+Parameters: {'algorithm': 'auto', 'leaf_size': 30, 'metric': 'minkowski', 'metric_params': None, 'n_jobs': None, 'n_neighbors': 3, 'p': 2, 'weights': 'uniform'}
+10-fold cross-validation mean weighted F1: 0.5369588705722823
+
 Classifier: Decision Tree
-10-fold cross-validation mean F1: 0.7667181488461632
------------------------------------------------------------
+Parameters: {'ccp_alpha': 0.003, 'class_weight': None, 'criterion': 'gini', 'max_depth': 4, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'random_state': None, 'splitter': 'best'}
+10-fold cross-validation mean weighted F1: 0.7843151284101866
+
 Classifier: Random Forest
-10-fold cross-validation mean F1: 0.6622528807500939
------------------------------------------------------------
-Classifier: Neural Net
-10-fold cross-validation mean F1: 0.7220517263425028
------------------------------------------------------------
+Parameters: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 6, 'max_features': 1, 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 10, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}
+10-fold cross-validation mean weighted F1: 0.6578081863941145
+
+Classifier: Neural Net (Multi-layer Perceptron)
+Parameters: {'activation': 'relu', 'alpha': 1, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': (100,), 'learning_rate': 'constant', 'learning_rate_init': 0.001, 'max_fun': 15000, 'max_iter': 1000, 'momentum': 0.9, 'n_iter_no_change': 10, 'nesterovs_momentum': True, 'power_t': 0.5, 'random_state': None, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False, 'warm_start': False}
+10-fold cross-validation mean weighted F1: 0.43274943807587984
+
 Classifier: AdaBoost
-10-fold cross-validation mean F1: 0.7095708771460894
------------------------------------------------------------
-Classifier: Naive Bayes
-10-fold cross-validation mean F1: 0.6837216447462959
------------------------------------------------------------
+Parameters: {'algorithm': 'SAMME.R', 'base_estimator': None, 'learning_rate': 1.0, 'n_estimators': 50, 'random_state': None}
+10-fold cross-validation mean weighted F1: 0.6534803446805135
+
+Classifier: Gaussian Naive Bayes
+Parameters: {'priors': None, 'var_smoothing': 1e-09}
+10-fold cross-validation mean weighted F1: 0.6559218882855672
+
 Classifier: QDA
-10-fold cross-validation mean F1: 0.6818927208348341
+Parameters: {'priors': None, 'reg_param': 0.0, 'store_covariance': False, 'tol': 0.0001}
+10-fold cross-validation mean weighted F1: 0.43542015153410907
 
+Dataset: synthetic_logs_with_adaptations
 
-
-
-dataset: synthetic_logs_with_adaptations
------------------------------------------------------------
 Classifier: Nearest Neighbors
-10-fold cross-validation mean F1: 0.6688850179977335
------------------------------------------------------------
-Classifier: Linear SVM
-10-fold cross-validation mean F1: 0.7480531423445591
------------------------------------------------------------
-Classifier: RBF SVM
-10-fold cross-validation mean F1: 0.7421891678083166
------------------------------------------------------------
+Parameters: {'algorithm': 'auto', 'leaf_size': 30, 'metric': 'minkowski', 'metric_params': None, 'n_jobs': None, 'n_neighbors': 3, 'p': 2, 'weights': 'uniform'}
+10-fold cross-validation mean weighted F1: 0.7586216957631601
+
 Classifier: Decision Tree
-10-fold cross-validation mean F1: 0.923349141635657
------------------------------------------------------------
+Parameters: {'ccp_alpha': 0.003, 'class_weight': None, 'criterion': 'gini', 'max_depth': 4, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'random_state': None, 'splitter': 'best'}
+10-fold cross-validation mean weighted F1: 0.9237324182574183
+
 Classifier: Random Forest
-10-fold cross-validation mean F1: 0.9142260422186894
------------------------------------------------------------
-Classifier: Neural Net
-10-fold cross-validation mean F1: 0.7480531423445591
------------------------------------------------------------
+Parameters: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 6, 'max_features': 1, 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 10, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}
+10-fold cross-validation mean weighted F1: 0.8789572865722868
+
+Classifier: Neural Net (Multi-layer Perceptron)
+Parameters: {'activation': 'relu', 'alpha': 1, 'batch_size': 'auto', 'beta_1': 0.9, 'beta_2': 0.999, 'early_stopping': False, 'epsilon': 1e-08, 'hidden_layer_sizes': (100,), 'learning_rate': 'constant', 'learning_rate_init': 0.001, 'max_fun': 15000, 'max_iter': 1000, 'momentum': 0.9, 'n_iter_no_change': 10, 'nesterovs_momentum': True, 'power_t': 0.5, 'random_state': None, 'shuffle': True, 'solver': 'adam', 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': False, 'warm_start': False}
+10-fold cross-validation mean weighted F1: 0.5948695394413764
+
 Classifier: AdaBoost
-10-fold cross-validation mean F1: 0.8264897957330447
------------------------------------------------------------
-Classifier: Naive Bayes
-10-fold cross-validation mean F1: 0.757329007898474
------------------------------------------------------------
+Parameters: {'algorithm': 'SAMME.R', 'base_estimator': None, 'learning_rate': 1.0, 'n_estimators': 50, 'random_state': None}
+10-fold cross-validation mean weighted F1: 0.8264897957330447
+
+Classifier: Gaussian Naive Bayes
+Parameters: {'priors': None, 'var_smoothing': 1e-09}
+10-fold cross-validation mean weighted F1: 0.75808712722691
+
 Classifier: QDA
-10-fold cross-validation mean F1: 0.756002486565303
+Parameters: {'priors': None, 'reg_param': 0.0, 'store_covariance': False, 'tol': 0.0001}
+10-fold cross-validation mean weighted F1: 0.7580498361026952
+
