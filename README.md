@@ -5,3 +5,6 @@ The main implementation is available at [Correlation Identification.ipynb](https
 The input logs used are in the logs/ folder.
 
 The outputs are in the outputs/ folder
+
+* Note: if you are looking for the code for ML models creation and storage, you need to switch to the *develop* branch.
+
