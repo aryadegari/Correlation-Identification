@@ -1,7 +1,7 @@
 Dataset: bpic17_logs_with_interventions-----------------------------
 
 Classifier: Decision Tree
-Parameters: {'ccp_alpha': 0.01, 'class_weight': None, 'criterion': 'entropy', 'max_depth': 5, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 3, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'random_state': None, 'splitter': 'best'}
+Parameters: {'ccp_alpha': 0.01, 'class_weight': None, 'criterion': 'entropy', 'max_depth': None, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'random_state': None, 'splitter': 'best'}
 
 Decision Tree on the whole data set:
 |--- duration <= 30.35
@@ -31,7 +31,7 @@ Decision Tree on the whole data set:
 Dataset: synthetic_logs_with_adaptations-----------------------------
 
 Classifier: Decision Tree
-Parameters: {'ccp_alpha': 0.01, 'class_weight': None, 'criterion': 'entropy', 'max_depth': 4, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 5, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'random_state': None, 'splitter': 'best'}
+Parameters: {'ccp_alpha': 0.01, 'class_weight': None, 'criterion': 'entropy', 'max_depth': None, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'random_state': None, 'splitter': 'best'}
 
 Decision Tree on the whole data set:
 |--- trace:cycle_time <= 250.09

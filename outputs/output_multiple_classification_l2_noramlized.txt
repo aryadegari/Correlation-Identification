@@ -1,0 +1,76 @@
+Dataset: bpic17_logs_with_interventions-----------------------------
+
+Classifier: Nearest Neighbors
+Parameters: {'algorithm': 'auto', 'leaf_size': 30, 'metric': 'minkowski', 'metric_params': None, 'n_jobs': None, 'n_neighbors': 60, 'p': 2, 'weights': 'distance'}
+F1: 0.5595415302326543
+Precision: 0.5617497288056368
+Recall: 0.5604010822855324
+
+Classifier: Decision Tree
+Parameters: {'ccp_alpha': 0.01, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'random_state': None, 'splitter': 'best'}
+F1: 0.5156022271626785
+Precision: 0.6095733093766762
+Recall: 0.5678815852299857
+
+Classifier: Random Forest
+Parameters: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'auto', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+F1: 0.6790168726832707
+Precision: 0.6819896799698529
+Recall: 0.6796116504854369
+
+Classifier: Gaussian Naive Bayes
+Parameters: {'priors': None, 'var_smoothing': 1e-09}
+F1: 0.5476371746920665
+Precision: 0.5760140754891024
+Recall: 0.5666083081330574
+
+Classifier: Mutlinomial Naive Bayes
+Parameters: {'alpha': 0.1, 'class_prior': None, 'fit_prior': False}
+F1: 0.5321136683969383
+Precision: 0.5389408276808739
+Recall: 0.5360496578067802
+
+Classifier: XGBoost
+Parameters: {'objective': 'binary:logistic', 'use_label_encoder': None, 'base_score': None, 'booster': None, 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': 1, 'early_stopping_rounds': None, 'enable_categorical': False, 'eval_metric': None, 'feature_types': None, 'gamma': None, 'gpu_id': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': 0.2, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': None, 'max_leaves': None, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'n_estimators': 200, 'n_jobs': None, 'num_parallel_tree': None, 'predictor': None, 'random_state': 42, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': 0.5, 'tree_method': None, 'validate_parameters': None, 'verbosity': None}
+F1: 0.7041323530875027
+Precision: 0.7043431522020108
+Recall: 0.7041222346013051
+
+Dataset: synthetic_logs_with_adaptations-----------------------------
+
+Classifier: Nearest Neighbors
+Parameters: {'algorithm': 'auto', 'leaf_size': 30, 'metric': 'minkowski', 'metric_params': None, 'n_jobs': None, 'n_neighbors': 40, 'p': 2, 'weights': 'distance'}
+F1: 0.8139945714945714
+Precision: 0.827866929945055
+Recall: 0.82
+
+Classifier: Decision Tree
+Parameters: {'ccp_alpha': 0.01, 'class_weight': None, 'criterion': 'entropy', 'max_depth': None, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'random_state': None, 'splitter': 'best'}
+F1: 0.8158434004474273
+Precision: 0.813767526006332
+Recall: 0.84
+
+Classifier: Random Forest
+Parameters: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'auto', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 10, 'n_jobs': None, 'oob_score': False, 'random_state': 42, 'verbose': 0, 'warm_start': False}
+F1: 0.8062480583804695
+Precision: 0.8217738359201775
+Recall: 0.805
+
+Classifier: Gaussian Naive Bayes
+Parameters: {'priors': None, 'var_smoothing': 1e-05}
+F1: 0.5576576116191501
+Precision: 0.5997028154327425
+Recall: 0.59
+
+Classifier: Mutlinomial Naive Bayes
+Parameters: {'alpha': 0.5, 'class_prior': None, 'fit_prior': False}
+F1: 0.5065092979061272
+Precision: 0.5648051194161875
+Recall: 0.515
+
+Classifier: XGBoost
+Parameters: {'objective': 'binary:logistic', 'use_label_encoder': None, 'base_score': None, 'booster': None, 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': 1, 'early_stopping_rounds': None, 'enable_categorical': False, 'eval_metric': None, 'feature_types': None, 'gamma': None, 'gpu_id': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': 0.1, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': None, 'max_leaves': None, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'n_estimators': 200, 'n_jobs': None, 'num_parallel_tree': None, 'predictor': None, 'random_state': 42, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': 0.8, 'tree_method': None, 'validate_parameters': None, 'verbosity': None}
+F1: 0.8055875077303648
+Precision: 0.82407125
+Recall: 0.805
+
